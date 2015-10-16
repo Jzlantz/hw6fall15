@@ -38,7 +38,6 @@ Given /^I am on the RottenPotatoes home page$/ do
   click_button 'Update Movie Info'
  end
 
-
 # New step definitions to be completed for HW5. 
 # Note that you may need to add additional step definitions beyond these
 
@@ -46,28 +45,67 @@ Given /^I am on the RottenPotatoes home page$/ do
 # Add a declarative step here for populating the DB with movies.
 
 Given /the following movies have been added to RottenPotatoes:/ do |movies_table|
-  pending  # Remove this statement when you finish implementing the test step
+
   movies_table.hashes.each do |movie|
-    # Each returned movie will be a hash representing one row of the movies_table
-    # The keys will be the table headers and the values will be the row contents.
-    # Entries can be directly to the database with ActiveRecord methods
-    # Add the necessary Active Record call(s) to populate the database.
+    
+    Movie.create(movie)
+    
   end
 end
 
 When /^I have opted to see movies rated: "(.*?)"$/ do |arg1|
-  # HINT: use String#split to split up the rating_list, then
-  # iterate over the ratings and check/uncheck the ratings
-  # using the appropriate Capybara command(s)
-  pending  #remove this statement after implementing the test step
+  
+  ratings = Movie.all_ratings
+  
+  ratings.each do |rating|
+    if arg1.split(', ').include?(rating)
+        check("ratings_"+rating)
+    else
+        uncheck("ratings_"+rating)
+    end
+  end
+  
+  click_on("ratings_submit")
+  
 end
 
 Then /^I should see only movies rated: "(.*?)"$/ do |arg1|
-  pending  #remove this statement after implementing the test step
+ 
+  ratings_shown = page.all('table#movies tr > td:nth-child(2)').map(&:text).uniq
+  ratings_shown.sort.should == arg1.split(', ').sort
 end
 
 Then /^I should see all of the movies$/ do
-  pending  #remove this statement after implementing the test step
+  rows = page.all('#movies tr').size - 1
+  rows.should == Movie.count()
+end
+
+
+When(/^I have sorted movies alphabetically$/) do
+  
+  #click link to sort
+  click_link('title_header')
+  
+  
+end
+
+Then /^I should see "(.*)" before "(.*)"$/ do |arg1, arg2|
+ 
+  #grab movies into array
+  movies_list = page.all('table#movies tr > td:nth-child(1)').map(&:text)
+  
+  #Put args in alphabetical order
+  args_list = [arg1,arg2]
+
+  #compare index of args
+  movies_list.find_index(args_list[0]).should < movies_list.find_index(args_list[1])
+  
+  
+end
+
+When(/^I have sorted movies by release date$/) do
+  #click link to sort
+  click_link('release_date_header')
 end
 
 
