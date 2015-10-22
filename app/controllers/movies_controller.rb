@@ -1,5 +1,13 @@
 class MoviesController < ApplicationController
 
+  def search_tmdb
+    @matching_movies = Movie.find_in_tmdb(params[:search_terms])
+    if @matching_movies.empty?
+      flash[:notice] = "'#{params[:search_terms]}' was not found in TMDb."
+      redirect_to movies_path
+    end
+  end
+  
   def movie_params
     params.require(:movie).permit(:title, :rating, :description, :release_date)
   end

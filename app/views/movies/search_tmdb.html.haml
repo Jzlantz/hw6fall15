@@ -1,0 +1,24 @@
+%h1 Search Results:
+
+- if @matching_movies.empty?
+  %p No results were found
+
+- @matching_movies.each do |movie|
+
+  %h2= movie.title
+  = image_tag (@configuration.base_url).to_s + (@configuration.poster_sizes[0]).to_s +  (movie.poster_path).to_s
+  %ul#details
+    %li
+      %strong ID
+      = movie.id
+    %li
+      %strong Release Date:
+      = movie.release_date
+    %li
+      %strong Poster URL
+      = (@configuration.base_url).to_s + (@configuration.poster_sizes[0]).to_s +  (movie.poster_path).to_s
+    %li
+      %strong Description:
+      = truncate(movie.overview, :length => 250)
+      
+  
