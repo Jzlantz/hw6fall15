@@ -1,46 +1,45 @@
 %h1 Search Results:
 
-- @matching_movies.each do |movie|
+= form_tag({:controller => 'movies', :action => 'add_tmdb'}, {:method => 'get'}) do
+  
+  - @matching_movies.each do |movie|
 
-  %h2= movie.title
-  = image_tag (@configuration.base_url).to_s + (@configuration.poster_sizes[0]).to_s +  (movie.poster_path).to_s
-  %ul#details
-    %li
-      %strong ID
-      = movie.id
-    %li
-      %strong Release Date:
-      = movie.release_date
-    %li
-      %strong Poster URL
-      = (@configuration.base_url).to_s + (@configuration.poster_sizes[0]).to_s +  (movie.poster_path).to_s
-    %li
-      %strong Description:
-      = truncate(movie.overview, :length => 250)
-    %li
-      %strong Content Rating
-      =get_rating(movie.id)
-    %li
-      %strong Movie Details
-      =Tmdb::Movie.detail(movie.id)
-    %li
-      %strong Title
-      =Tmdb::Movie.detail(movie.id)["original_title"]
-    %li
-      %strong Rating
-      =get_rating(movie.id)
-    %li
-      %strong Description
-      =Tmdb::Movie.detail(movie.id)["overview"]
-    %li
-      %strong Release Date
-      =Tmdb::Movie.detail(movie.id)["release_date"]
-      
-    %li
-      %strong Add to Rotten Potatoes
-      %td=check_box_tag 'checked_movie_ids[]',movie.id
-      
-= form_tag movies_path, :method => :get, :id => 'add_movies_form' do
+    %h2= movie.title
+    = image_tag (@configuration.base_url).to_s + (@configuration.poster_sizes[0]).to_s +  (movie.poster_path).to_s
+    %ul#details
+      %li
+        %strong ID
+        = movie.id
+      %li
+        %strong Release Date:
+        = movie.release_date
+      %li
+        %strong Poster URL
+        = (@configuration.base_url).to_s + (@configuration.poster_sizes[0]).to_s +  (movie.poster_path).to_s
+      %li
+        %strong Description:
+        = truncate(movie.overview, :length => 250)
+      %li
+        %strong Content Rating
+        =get_rating(movie.id)
+      %li
+        %strong Movie Details
+        =Tmdb::Movie.detail(movie.id)
+      %li
+        %strong Title
+        =Tmdb::Movie.detail(movie.id)["original_title"]
+      %li
+        %strong Rating
+        =get_rating(movie.id)
+      %li
+        %strong Description
+        =Tmdb::Movie.detail(movie.id)["overview"]
+      %li
+        %strong Release Date
+        =Tmdb::Movie.detail(movie.id)["release_date"]
+      %li
+        %strong Add to Rotten Potatoes
+        %td=check_box_tag 'checked_movie_ids[]',movie.id
+
   = submit_tag 'Add Selected Movies'
-      
   

@@ -9,13 +9,13 @@ class MoviesController < ApplicationController
       end
   end
   
-  
   def add_tmdb
-    if(params[].empty?)
+    #raise params.to_s
+    if(params['checked_movie_ids'].nil?)
       flash[:notice] = "No movies selected"
       redirect_to movies_path
     else
-      params.each do |id|
+      params['checked_movie_ids'].each do |id|
         Movie.create_from_tmdb(id)
       end
        flash[:notice] = "Movies Successfully Added."
