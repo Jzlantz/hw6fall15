@@ -1,13 +1,26 @@
 class MoviesController < ApplicationController
+  helper :all
 
   def search_tmdb
-    
       @matching_movies = Movie.find_in_tmdb(params[:search_terms])
       if @matching_movies.nil? or @matching_movies.empty?
         flash[:notice] = "No matching movies were found on TMDb."
         redirect_to movies_path
       end
-      
+  end
+  
+  
+  def add_tmdb
+    if(params[].empty?)
+      flash[:notice] = "No movies selected"
+      redirect_to movies_path
+    else
+      params.each do |id|
+        Movie.create_from_tmdb(id)
+      end
+       flash[:notice] = "Movies Successfully Added."
+       redirect_to movies_path
+    end
   end
   
   def movie_params

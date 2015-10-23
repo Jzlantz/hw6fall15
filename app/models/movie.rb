@@ -21,5 +21,8 @@ class Movie < ActiveRecord::Base
     end
   end
   
+  def self.create_from_tmdb(id)
+      movie_details = Tmdb::Movie.detail(id)
+  end
   
 end

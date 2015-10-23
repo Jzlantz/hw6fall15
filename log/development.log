@@ -4788,3 +4788,1974 @@ Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb
 
 
 Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:58:38 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:59:42 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (1541.8ms)
+Completed 200 OK in 1650ms (Views: 1574.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:00:15 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"bob & bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (1526.1ms)
+Completed 200 OK in 1701ms (Views: 1549.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:00:57 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"bob & bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected ';', expecting ')'
+));}\n  </li>\n  <li>\n    <strong>Content Rating</strong>\n    #{
+   ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:23: unknown regexp options - trg
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected $undefined
+));}\n  </li>\n  <li>\n    <strong>Content Rating</strong>\n    #{
+                                                           ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected '}', expecting tSTRING_DEND
+));}\n  </li>\n  <li>\n    <stron...
+    ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:26: unknown regexp options - trg
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected $undefined
+...dd to Rotten Potatoes</strong>\n    <td>#{_hamlout.adjust_ta...
+...                               ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected '}', expecting tSTRING_DEND
+));}</td>\n  </li>\n</ul>\n", -2, false);end;
+    ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: unknown regexp option - l
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected $undefined
+));}</td>\n  </li>\n</ul>\n", -2, false);end;
+                   ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: unterminated regexp meets end of file
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected ';', expecting ')'
+  app/views/movies/search_tmdb.html.haml:23: unknown regexp options - trg
+  app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/search_tmdb.html.haml:26: unknown regexp options - trg
+  app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/search_tmdb.html.haml:29: unknown regexp option - l
+  app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:29: unterminated regexp meets end of file
+  app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.2ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:01:46 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"bob & bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (1490.8ms)
+Completed 200 OK in 1610ms (Views: 1522.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 15:01:48 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 15:01:48 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 15:01:48 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 15:01:48 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 15:01:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 15:01:48 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:02:32 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"bob & bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:25: syntax error, unexpected tLABEL
+...se_true_false_true_false((Tmdb:Movie.releases(movie.id)
+...                               ^):
+  app/views/movies/search_tmdb.html.haml:25: syntax error, unexpected tLABEL
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.4ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:02:55 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"bob & bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (2926.8ms)
+Completed 200 OK in 3026ms (Views: 2950.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 15:02:58 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 15:02:58 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 15:02:58 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 15:02:58 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 15:02:58 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 15:02:58 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:06:26 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (367.2ms)
+Completed 200 OK in 467ms (Views: 393.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:06:44 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (361.1ms)
+Completed 200 OK in 460ms (Views: 388.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 15:06:45 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 15:06:45 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 15:06:45 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 15:06:45 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 15:06:45 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 15:06:45 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:07:06 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (387.6ms)
+Completed 200 OK in 491ms (Views: 415.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 15:07:07 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 15:07:07 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 15:07:07 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 15:07:07 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 15:07:07 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 15:07:07 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:07:23 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (372.5ms)
+Completed 200 OK in 470ms (Views: 398.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 15:07:24 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 15:07:24 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 15:07:24 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 15:07:24 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 15:07:24 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 15:07:24 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:10:37 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:22: syntax error, unexpected '|', expecting ')'
+...vie.releases(movie.id).select(|k| k["iso_3166_1"] == "US")
+...                               ^):
+  app/views/movies/search_tmdb.html.haml:22: syntax error, unexpected '|', expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.3ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:10:54 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected ';', expecting ')'
+));}\n  </li>\n  <li>\n    <stro...
+   ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:23: unknown regexp options - trg
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected $undefined
+...ent Rating Unmodified</strong>\n    #{
+...                               ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected '}', expecting tSTRING_DEND
+));}\n  </li>\n  <li>\n    <stron...
+    ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:26: unknown regexp options - trg
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected $undefined
+...dd to Rotten Potatoes</strong>\n    <td>#{_hamlout.adjust_ta...
+...                               ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected '}', expecting tSTRING_DEND
+));}</td>\n  </li>\n</ul>\n", -2, false);end;
+    ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: unknown regexp option - l
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected $undefined
+));}</td>\n  </li>\n</ul>\n", -2, false);end;
+                   ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: unterminated regexp meets end of file
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected ';', expecting ')'
+  app/views/movies/search_tmdb.html.haml:23: unknown regexp options - trg
+  app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/search_tmdb.html.haml:26: unknown regexp options - trg
+  app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/search_tmdb.html.haml:29: unknown regexp option - l
+  app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:29: unterminated regexp meets end of file
+  app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.2ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:11:21 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (395.5ms)
+Completed 200 OK in 492ms (Views: 421.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 15:11:21 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 15:11:21 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 15:11:21 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 15:11:21 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 15:11:21 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 15:11:21 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:12:12 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:22: syntax error, unexpected tIDENTIFIER, expecting ']'
+...t{|k| k["countries]["iso_3166_1"] == "US"}
+...                               ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:22: syntax error, unexpected tCONSTANT, expecting '}'
+...countries]["iso_3166_1"] == "US"}
+...                               ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected ')', expecting '}'
+));}</td>\n  </li>\n</ul>\n", -2, false);end;
+                                        ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:32: syntax error, unexpected keyword_ensure, expecting '}'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:32: syntax error, unexpected keyword_end, expecting '}'
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:35: syntax error, unexpected keyword_end, expecting '}'):
+  app/views/movies/search_tmdb.html.haml:22: syntax error, unexpected tIDENTIFIER, expecting ']'
+  app/views/movies/search_tmdb.html.haml:22: syntax error, unexpected tCONSTANT, expecting '}'
+  app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected ')', expecting '}'
+  app/views/movies/search_tmdb.html.haml:32: syntax error, unexpected keyword_ensure, expecting '}'
+  app/views/movies/search_tmdb.html.haml:32: syntax error, unexpected keyword_end, expecting '}'
+  app/views/movies/search_tmdb.html.haml:35: syntax error, unexpected keyword_end, expecting '}'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.6ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:12:26 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (148.5ms)
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =(Tmdb::Movie.releases(movie.id)).select{|k| k["countries"]["iso_3166_1"] == "US"}
+    23:     %li
+    24:       %strong Content Rating Unmodified
+    25:       =Tmdb::Movie.releases(movie.id)
+  app/views/movies/search_tmdb.html.haml:22:in `block (2 levels) in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984042857500'
+  app/views/movies/search_tmdb.html.haml:22:in `select'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984042857500'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984042857500'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.8ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 15:13:05 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (193.5ms)
+Completed 500 Internal Server Error in 268ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `exists?' for nil:NilClass):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =(Tmdb::Movie.releases(movie.id)).select{|k| k["countries"].exists?}
+    23:     %li
+    24:       %strong Content Rating Unmodified
+    25:       =Tmdb::Movie.releases(movie.id)
+  app/views/movies/search_tmdb.html.haml:22:in `block (2 levels) in _app_views_movies_search_tmdb_html_haml__2431607603500732703_23092080'
+  app/views/movies/search_tmdb.html.haml:22:in `select'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_23092080'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_23092080'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.2ms)
+
+
+Started GET "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:34:11 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"search_tmdb"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=search_tmdb):
+  app/controllers/movies_controller.rb:19:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.2ms)
+
+
+Started GET "/movies/" for 129.255.226.49 at 2015-10-23 16:35:30 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:35:38 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7IgC08oQKacm157HsWxAbaosnXIFtFBusRksiy3AZQZCWJXC5k5qh8wfV1msu8sBOMJqSEtBM1jrcGJxbarxgQ==", "search_terms"=>"", "commit"=>"Search TMDb"}
+Redirected to https://selt-workspace-jzlantz.c9.io/movies
+Completed 302 Found in 74ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 129.255.226.49 at 2015-10-23 16:35:38 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:35:44 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (149.9ms)
+Completed 500 Internal Server Error in 236ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `exists?' for nil:NilClass):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =(Tmdb::Movie.releases(movie.id)).select{|k| k["countries"].exists?}
+    23:     %li
+    24:       %strong Content Rating Unmodified
+    25:       =Tmdb::Movie.releases(movie.id)
+  app/views/movies/search_tmdb.html.haml:22:in `block (2 levels) in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081472000'
+  app/views/movies/search_tmdb.html.haml:22:in `select'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081472000'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081472000'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.5ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:36:20 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (368.5ms)
+Completed 200 OK in 471ms (Views: 392.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:36:38 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (156.3ms)
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =(Tmdb::Movie.releases(movie.id))[3][0]
+    23:     %li
+    24:       %strong Content Rating Unmodified
+    25:       =Tmdb::Movie.releases(movie.id)
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984084725680'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984084725680'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.7ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:37:16 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (368.9ms)
+Completed 200 OK in 485ms (Views: 412.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 16:37:16 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 16:37:16 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 16:37:16 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 16:37:16 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 16:37:16 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 16:37:16 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:39:32 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (381.4ms)
+Completed 200 OK in 494ms (Views: 419.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 16:39:33 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 16:39:33 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 16:39:33 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 16:39:33 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 16:39:33 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 16:39:33 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:40:53 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (156.6ms)
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =(Tmdb::Movie.releases(movie.id).flatten)[3][0].find{|e| e["iso_3166_1"]=="US"}
+    23:     %li
+    24:       %strong Content Rating Unmodified
+    25:       =Tmdb::Movie.releases(movie.id)
+  app/views/movies/search_tmdb.html.haml:22:in `[]'
+  app/views/movies/search_tmdb.html.haml:22:in `block (2 levels) in _app_views_movies_search_tmdb_html_haml__2431607603500732703_48487080'
+  app/views/movies/search_tmdb.html.haml:22:in `each'
+  app/views/movies/search_tmdb.html.haml:22:in `find'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_48487080'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_48487080'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (42.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.4ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:41:23 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected ';', expecting ')'
+));}\n  </li>\n  <li>\n    <stro...
+   ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:23: unknown regexp options - trg
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected $undefined
+...ent Rating Unmodified</strong>\n    #{
+...                               ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected '}', expecting tSTRING_DEND
+));}\n  </li>\n  <li>\n    <stron...
+    ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:26: unknown regexp options - trg
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected $undefined
+...dd to Rotten Potatoes</strong>\n    <td>#{_hamlout.adjust_ta...
+...                               ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected '}', expecting tSTRING_DEND
+));}</td>\n  </li>\n</ul>\n", -2, false);end;
+    ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: unknown regexp option - l
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected $undefined
+));}</td>\n  </li>\n</ul>\n", -2, false);end;
+                   ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: unterminated regexp meets end of file
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected ';', expecting ')'
+  app/views/movies/search_tmdb.html.haml:23: unknown regexp options - trg
+  app/views/movies/search_tmdb.html.haml:23: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/search_tmdb.html.haml:26: unknown regexp options - trg
+  app/views/movies/search_tmdb.html.haml:26: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/search_tmdb.html.haml:29: unknown regexp option - l
+  app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:29: unterminated regexp meets end of file
+  app/views/movies/search_tmdb.html.haml:29: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.8ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:41:36 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (154.3ms)
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =(Tmdb::Movie.releases(movie.id)).find{|e| e["iso_3166_1"]=="US"}
+    23:     %li
+    24:       %strong Content Rating Unmodified
+    25:       =Tmdb::Movie.releases(movie.id)
+  app/views/movies/search_tmdb.html.haml:22:in `[]'
+  app/views/movies/search_tmdb.html.haml:22:in `block (2 levels) in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984089123300'
+  app/views/movies/search_tmdb.html.haml:22:in `each'
+  app/views/movies/search_tmdb.html.haml:22:in `find'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984089123300'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984089123300'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.3ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:42:08 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (154.4ms)
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =(Tmdb::Movie.releases(movie.id)).find{|e| e['iso_3166_1']=='US'}
+    23:     %li
+    24:       %strong Content Rating Unmodified
+    25:       =Tmdb::Movie.releases(movie.id)
+  app/views/movies/search_tmdb.html.haml:22:in `[]'
+  app/views/movies/search_tmdb.html.haml:22:in `block (2 levels) in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984095734800'
+  app/views/movies/search_tmdb.html.haml:22:in `each'
+  app/views/movies/search_tmdb.html.haml:22:in `find'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984095734800'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984095734800'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.5ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:42:56 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (375.6ms)
+Completed 200 OK in 488ms (Views: 412.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 16:42:57 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 16:42:57 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:43:08 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (144.5ms)
+Completed 500 Internal Server Error in 220ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =(Tmdb::Movie.releases(movie.id)).find{|e| e[3]['iso_3166_1']=='US'}
+    23:     %li
+    24:       %strong Content Rating Unmodified
+    25:       =Tmdb::Movie.releases(movie.id)
+  app/views/movies/search_tmdb.html.haml:22:in `block (2 levels) in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984095848100'
+  app/views/movies/search_tmdb.html.haml:22:in `each'
+  app/views/movies/search_tmdb.html.haml:22:in `find'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984095848100'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984095848100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:43:19 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (152.2ms)
+Completed 500 Internal Server Error in 228ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =(Tmdb::Movie.releases(movie.id)).find{|e| e[3][0]['iso_3166_1']=='US'}
+    23:     %li
+    24:       %strong Content Rating Unmodified
+    25:       =Tmdb::Movie.releases(movie.id)
+  app/views/movies/search_tmdb.html.haml:22:in `block (2 levels) in _app_views_movies_search_tmdb_html_haml__2431607603500732703_47716260'
+  app/views/movies/search_tmdb.html.haml:22:in `each'
+  app/views/movies/search_tmdb.html.haml:22:in `find'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_47716260'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_47716260'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (24.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.4ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:43:41 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (219.2ms)
+Completed 200 OK in 316ms (Views: 243.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 16:43:42 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 16:43:42 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 16:43:42 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 16:43:42 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 16:43:42 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 16:43:42 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:45:17 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:      <!-- =(Tmdb::Movie.releases(movie.id)).find{|e| e[3][0]['iso_3166_1']=='US'} !-->
+    23:       =Tmdb::Movie.releases(movie.id).flatten
+    24:     %li
+    25:       %strong Content Rating Unmodified
+  app/views/movies/search_tmdb.html.haml:22
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.2ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:45:29 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (574.8ms)
+Completed 200 OK in 687ms (Views: 611.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 16:45:30 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 16:45:30 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 16:45:30 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 16:45:30 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 16:45:30 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 16:45:30 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:47:20 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:24: syntax error, unexpected ')', expecting '}'
+));}\n  </li>\n  <li>\n    <st...
+ ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:24: unknown regexp options - trg
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:24: syntax error, unexpected $undefined
+...ent Rating Unmodified</strong>\n    #{
+...                               ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:27: syntax error, unexpected tSTRING_DEND, expecting '}'
+));}\n  </li>\n  <li>\n    <stron...
+    ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:27: unknown regexp options - trg
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:27: syntax error, unexpected $undefined
+...dd to Rotten Potatoes</strong>\n    <td>#{_hamlout.adjust_ta...
+...                               ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:30: unknown regexp option - l
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:30: syntax error, unexpected $undefined
+));}</td>\n  </li>\n</ul>\n", -2, false);end;
+                   ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:30: unterminated regexp meets end of file
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:30: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/movies/search_tmdb.html.haml:24: syntax error, unexpected ')', expecting '}'
+  app/views/movies/search_tmdb.html.haml:24: unknown regexp options - trg
+  app/views/movies/search_tmdb.html.haml:24: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:27: syntax error, unexpected tSTRING_DEND, expecting '}'
+  app/views/movies/search_tmdb.html.haml:27: unknown regexp options - trg
+  app/views/movies/search_tmdb.html.haml:27: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:30: unknown regexp option - l
+  app/views/movies/search_tmdb.html.haml:30: syntax error, unexpected $undefined
+  app/views/movies/search_tmdb.html.haml:30: unterminated regexp meets end of file
+  app/views/movies/search_tmdb.html.haml:30: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.1ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:47:49 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (152.5ms)
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `contains?' for "id":String):
+    20:     %li
+    21:       %strong Content Rating
+    22:       <!-- =(Tmdb::Movie.releases(movie.id)).find{|e| e[3][0]['iso_3166_1']=='US'} !-->
+    23:       =Tmdb::Movie.releases(movie.id).flatten.find{|element| element.contains?("certification")}
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       =Tmdb::Movie.releases(movie.id)
+  app/views/movies/search_tmdb.html.haml:23:in `block (2 levels) in _app_views_movies_search_tmdb_html_haml__2431607603500732703_46731380'
+  app/views/movies/search_tmdb.html.haml:23:in `each'
+  app/views/movies/search_tmdb.html.haml:23:in `find'
+  app/views/movies/search_tmdb.html.haml:23:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_46731380'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_46731380'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.8ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:48:09 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (278.7ms)
+Completed 500 Internal Server Error in 356ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `contains?' for ["id", 12]:Array):
+    20:     %li
+    21:       %strong Content Rating
+    22:       <!-- =(Tmdb::Movie.releases(movie.id)).find{|e| e[3][0]['iso_3166_1']=='US'} !-->
+    23:       =Tmdb::Movie.releases(movie.id).find{|element| element.contains?("certification")}
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       =Tmdb::Movie.releases(movie.id)
+  app/views/movies/search_tmdb.html.haml:23:in `block (2 levels) in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081962880'
+  app/views/movies/search_tmdb.html.haml:23:in `each'
+  app/views/movies/search_tmdb.html.haml:23:in `find'
+  app/views/movies/search_tmdb.html.haml:23:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081962880'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081962880'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.9ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:50:25 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (249.7ms)
+Completed 200 OK in 347ms (Views: 273.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 16:50:25 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 16:50:25 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 16:50:25 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 16:50:25 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 16:50:25 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 16:50:25 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:53:07 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (225.8ms)
+Completed 200 OK in 360ms (Views: 286.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 16:53:08 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 16:53:08 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 16:53:08 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 16:53:08 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 16:53:08 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 16:53:08 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:57:28 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (215.7ms)
+Completed 200 OK in 313ms (Views: 237.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 16:57:28 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 16:57:28 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 16:57:28 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 16:57:28 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 16:57:28 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 16:57:28 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:57:53 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (253.3ms)
+Completed 200 OK in 381ms (Views: 303.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 16:57:54 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 16:57:54 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 16:57:54 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 16:57:54 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 16:57:54 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 16:57:54 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:58:31 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (150.7ms)
+Completed 500 Internal Server Error in 225ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    23:       <!--=Tmdb::Movie.releases(movie.id).find{|element| element.contains?("certification")} --!>
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})["certification"]
+    27:     %li
+    28:       %strong Add to Rotten Potatoes
+    29:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:26:in `[]'
+  app/views/movies/search_tmdb.html.haml:26:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984092046800'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984092046800'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:59:24 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (221.7ms)
+Completed 200 OK in 323ms (Views: 249.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 16:59:24 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 16:59:24 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 16:59:24 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 16:59:24 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 16:59:24 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 16:59:24 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 16:59:41 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (218.8ms)
+Completed 200 OK in 317ms (Views: 242.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 16:59:41 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 16:59:41 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 16:59:41 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 16:59:41 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 16:59:41 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 16:59:41 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:00:02 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (227.4ms)
+Completed 200 OK in 342ms (Views: 249.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 17:00:02 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 17:00:02 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:02 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:02 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:02 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:02 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:00:09 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (216.9ms)
+Completed 200 OK in 316ms (Views: 244.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 17:00:10 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 17:00:10 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:10 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:10 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:10 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:10 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:00:30 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (214.0ms)
+Completed 200 OK in 312ms (Views: 240.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 17:00:30 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:30 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:30 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 17:00:30 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:30 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:30 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:00:44 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (250.3ms)
+Completed 200 OK in 346ms (Views: 272.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 17:00:44 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 17:00:44 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:44 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:44 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:44 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 17:00:44 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:01:02 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4C4ivdr2gf3iTeUUPSZC8vPzN8Zl9w1sIjWjWy66+pJO/rWs9qjC3QiFLIog8cmeYR3A/CsCblp4XO2hbtBuFQ==", "search_terms"=>"Up", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (369.1ms)
+Completed 500 Internal Server Error in 447ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    23:       <!--=Tmdb::Movie.releases(movie.id).find{|element| element.contains?("certification")} --!>
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"]
+    27:     %li
+    28:       %strong Add to Rotten Potatoes
+    29:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:26:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984082076800'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984082076800'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.7ms)
+
+
+Started GET "/movies" for 129.255.226.49 at 2015-10-23 17:09:52 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 17:09:52 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 17:09:52 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 17:09:52 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 17:09:52 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 17:09:52 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 17:09:52 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:09:54 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v3mvhVWdZR75gjwUfKdDiqT6wkfsj8NbyqqvkaaWdfURqTiUecMmPhNK9YphcMjmNhQ1faJ6oG2Qw+Fr5vzhcg==", "search_terms"=>"", "commit"=>"Search TMDb"}
+Redirected to https://selt-workspace-jzlantz.c9.io/movies
+Completed 302 Found in 83ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 129.255.226.49 at 2015-10-23 17:09:54 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:09:59 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (80.0ms)
+Completed 200 OK in 183ms (Views: 111.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:13:05 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (77.2ms)
+Completed 200 OK in 177ms (Views: 101.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 17:13:05 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 17:13:05 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 17:13:05 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 17:13:05 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 17:13:05 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 17:13:05 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:13:26 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       <!--  =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"] --!>
+    27:         =get_rating(movie.id)
+    28:     %li
+    29:       %strong Add to Rotten Potatoes
+    30:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:27
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.6ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:13:37 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (180.1ms)
+Completed 500 Internal Server Error in 255ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `get_rating' for #<#<Class:0x007f4ce1359c08>:0x000000058a6fb0>):
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       <!--  =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"] --!>
+    27:       =get_rating(movie.id)
+    28:     %li
+    29:       %strong Add to Rotten Potatoes
+    30:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:27:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.2ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:14:41 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (80.7ms)
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `get_rating' for #<#<Class:0x007f4ce1359c08>:0x007f4ce0b00520>):
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       <!--  =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"] --!>
+    27:       =get_rating(movie.id)
+    28:     %li
+    29:       %strong Add to Rotten Potatoes
+    30:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:27:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.5ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:16:39 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (79.0ms)
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `get_rating' for #<#<Class:0x007f4cd42ea568>:0x007f4cd42e9a00>):
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       <!--  =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"] --!>
+    27:       =get_rating(movie.id)
+    28:     %li
+    29:       %strong Add to Rotten Potatoes
+    30:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:27:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.6ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:16:51 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (79.0ms)
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `get_rating' for #<#<Class:0x007f4ce25896d0>:0x007f4ce2588b18>):
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       <!--  =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"] --!>
+    27:       =get_rating(movie.id)
+    28:     %li
+    29:       %strong Add to Rotten Potatoes
+    30:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:27:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.2ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:18:13 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (181.5ms)
+Completed 500 Internal Server Error in 374ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `get_rating' for #<#<Class:0x00000005881008>:0x00000005880310>):
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       <!--  =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"] --!>
+    27:       =get_rating(movie.id)
+    28:     %li
+    29:       %strong Add to Rotten Potatoes
+    30:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:27:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.1ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:21:55 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (93.3ms)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `get_rating' for #<#<Class:0x007f4ce0913460>:0x007f4ce0912970>):
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       <!--  =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"] --!>
+    27:       =get_rating(movie.id)
+    28:     %li
+    29:       %strong Add to Rotten Potatoes
+    30:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:27:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_46475740'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.3ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:22:16 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (72.2ms)
+Completed 200 OK in 172ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 17:22:16 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 17:22:16 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 17:22:16 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 17:22:17 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 17:22:17 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 17:22:17 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:22:30 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (276.1ms)
+Completed 500 Internal Server Error in 352ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `get_rating' for #<#<Class:0x007f4ce0913460>:0x007f4ce0a80320>):
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       <!--  =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"] --!>
+    27:       =get_rating(movie.id)
+    28:     %li
+    29:       %strong Add to Rotten Potatoes
+    30:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:27:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081654340'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081654340'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.2ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:36:08 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (251.3ms)
+Completed 500 Internal Server Error in 484ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `get_rating' for #<#<Class:0x007f4ce0913460>:0x007f4ce1e21d48>):
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       <!--  =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"] --!>
+    27:       =get_rating(movie.id)
+    28:     %li
+    29:       %strong Add to Rotten Potatoes
+    30:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:27:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081654340'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081654340'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.6ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:40:50 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (82.2ms)
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `movie' for #<#<Class:0x007f4ce2551438>:0x007f4ce2550880>):
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       <!--  =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"] --!>
+    27:       =get_rating(movie.id)
+    28:     %li
+    29:       %strong Add to Rotten Potatoes
+    30:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/helpers/movies_helper.rb:7:in `get_rating'
+  app/views/movies/search_tmdb.html.haml:27:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081654340'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984081654340'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.4ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:42:02 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (281.7ms)
+Completed 500 Internal Server Error in 569ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `movie' for #<#<Class:0x007f4ce2551438>:0x000000058003b8>):
+    24:     %li
+    25:       %strong Content Rating Unmodified
+    26:       <!--  =(Tmdb::Movie.releases(movie.id)["countries"].select{ |e| e['iso_3166_1']=='US'})[0]["certification"] --!>
+    27:       =get_rating(movie.id)
+    28:     %li
+    29:       %strong Add to Rotten Potatoes
+    30:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/helpers/movies_helper.rb:7:in `get_rating'
+  app/views/movies/search_tmdb.html.haml:27:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_46129260'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_46129260'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.7ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:42:21 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Finding Nem", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (219.6ms)
+Completed 200 OK in 376ms (Views: 249.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 17:42:21 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 17:42:21 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 17:42:21 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 17:42:21 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 17:42:21 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 17:42:21 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:43:23 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (157.8ms)
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =get_rating(movie.id)
+    23:     %li
+    24:       %strong Add to Rotten Potatoes
+    25:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/helpers/movies_helper.rb:15:in `get_rating'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_23350040'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_23350040'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.1ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:44:44 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t6MSPEVE3DLTWQw/tQxyvi5TdnG65U363G2GR4cXF/wZc4UtaRqfEjmRxaGo2/nSvL2BS/QQLsyGBMi9x32Dew==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (187.3ms)
+Completed 500 Internal Server Error in 464ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =get_rating(movie.id)
+    23:     %li
+    24:       %strong Add to Rotten Potatoes
+    25:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/helpers/movies_helper.rb:15:in `get_rating'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_23350040'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_23350040'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.6ms)
+
+
+Started GET "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:45:06 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"search_tmdb"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=search_tmdb):
+  app/controllers/movies_controller.rb:48:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.4ms)
+
+
+Started GET "/movies/" for 129.255.226.49 at 2015-10-23 17:45:15 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:45:28 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (346.2ms)
+Completed 500 Internal Server Error in 561ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `exists?' for nil:NilClass):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Content Rating
+    22:       =get_rating(movie.id)
+    23:     %li
+    24:       %strong Add to Rotten Potatoes
+    25:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/helpers/movies_helper.rb:15:in `get_rating'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_23350040'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_23350040'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.1ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:46:10 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (1530.5ms)
+Completed 200 OK in 1630ms (Views: 1553.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 17:46:12 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 17:46:12 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 17:46:12 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 17:46:12 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 17:46:12 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 17:46:12 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:48:39 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (1636.3ms)
+Completed 200 OK in 1730ms (Views: 1658.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 17:48:41 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 17:48:41 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 17:48:41 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 17:48:41 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 17:48:41 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:49:29 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (194.7ms)
+Completed 500 Internal Server Error in 282ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `movie_id' for #<#<Class:0x007f4ce1034e10>:0x000000058a7578>):
+    22:       =get_rating(movie.id)
+    23:     %li
+    24:       %strong Content Rating Unfiltered
+    25:       =Tmdb::Movie.releases(movie_id)
+    26:     %li
+    27:       %strong Add to Rotten Potatoes
+    28:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:25:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_46475520'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_46475520'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.6ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 17:49:42 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (3024.2ms)
+Completed 200 OK in 3131ms (Views: 3053.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 17:49:46 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 17:49:46 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 17:49:46 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 17:49:46 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 17:49:46 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 18:00:05 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/hw6fall15/app/models/movie.rb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/models/movie.rb:27: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/movies_controller.rb:5:in `search_tmdb'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.3ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 18:01:04 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (145.9ms)
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `deatils' for Tmdb::Movie:Class):
+    22:       =get_rating(movie.id)
+    23:     %li
+    24:       %strong Movie Details
+    25:       =Tmdb::Movie.deatils(movie.id)
+    26:     %li
+    27:       %strong Add to Rotten Potatoes
+    28:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:25:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_47968780'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_47968780'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (30.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.3ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 18:01:22 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (196.5ms)
+Completed 500 Internal Server Error in 291ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `details' for Tmdb::Movie:Class):
+    22:       =get_rating(movie.id)
+    23:     %li
+    24:       %strong Movie Details
+    25:       =Tmdb::Movie.details(movie.id)
+    26:     %li
+    27:       %strong Add to Rotten Potatoes
+    28:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:25:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_46040180'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_46040180'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.9ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 18:02:04 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (3227.9ms)
+Completed 200 OK in 3339ms (Views: 3257.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 18:02:08 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 18:02:08 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 18:02:08 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 18:02:08 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 18:02:08 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 18:03:18 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (4378.5ms)
+Completed 200 OK in 4490ms (Views: 4413.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 18:03:23 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 18:03:23 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 18:03:23 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 18:03:23 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 18:03:23 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 18:03:23 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 18:03:40 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (4414.7ms)
+Completed 200 OK in 4516ms (Views: 4443.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 18:03:44 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 18:03:44 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 18:03:44 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 18:03:44 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 18:03:44 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 18:03:45 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.226.49 at 2015-10-23 18:06:38 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTnFINsjwVBGoRbHDyqkG2KC03ZtDQXWiAtNPWk1F8DT6VIx932CcKxp31kS/S938GwkTCP4ZuDSYgPHKV+DRw==", "search_terms"=>"Bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (8469.8ms)
+Completed 200 OK in 8575ms (Views: 8505.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.226.49 at 2015-10-23 18:06:47 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.226.49 at 2015-10-23 18:06:47 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.226.49 at 2015-10-23 18:06:47 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.226.49 at 2015-10-23 18:06:47 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.226.49 at 2015-10-23 18:06:47 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.226.49 at 2015-10-23 18:06:47 +0000

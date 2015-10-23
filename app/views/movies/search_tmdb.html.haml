@@ -19,7 +19,23 @@
       = truncate(movie.overview, :length => 250)
     %li
       %strong Content Rating
-      =(Tmdb::Movie.releases(movie.id).flatten)[3][0]["certification"]
+      =get_rating(movie.id)
+    %li
+      %strong Movie Details
+      =Tmdb::Movie.detail(movie.id)
+    %li
+      %strong Title
+      =Tmdb::Movie.detail(movie.id)["original_title"]
+    %li
+      %strong Rating
+      =get_rating(movie.id)
+    %li
+      %strong Description
+      =Tmdb::Movie.detail(movie.id)["overview"]
+    %li
+      %strong Release Date
+      =Tmdb::Movie.detail(movie.id)["release_date"]
+      
     %li
       %strong Add to Rotten Potatoes
       %td=check_box_tag 'checked_movie_ids[]',movie.id
