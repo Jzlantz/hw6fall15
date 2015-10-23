@@ -3586,3 +3586,1205 @@ Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0e
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-22 21:04:29 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 13:16:04 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2LXlyVc4IVF2JhS7qZgjg1Q27bTrD9teZWpXQHet+lqTPn4iILM9woSvi2OgVZDDQzi+cqUmOwsElmRV+C2bZw==", "search_terms"=>"", "commit"=>"Search TMDb"}
+Redirected to https://selt-workspace-jzlantz.c9.io/movies
+Completed 302 Found in 220ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 129.255.1.139 at 2015-10-23 13:16:05 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://selt-workspace-jzlantz.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 129.255.1.139 at 2015-10-23 13:16:05 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (64.3ms)
+Completed 200 OK in 328ms (Views: 311.7ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 13:16:16 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JehXkeVKadoVsFUlqEpCW1SfZ24yt0XnUGriXaXyRFFuY8x6ksF1Sec5yv2hh/EbQ5E0qHyepbIxltFIKnIlbA==", "search_terms"=>"jkashdkjs", "commit"=>"Search TMDb"}
+Redirected to https://selt-workspace-jzlantz.c9.io/movies
+Completed 302 Found in 75ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 129.255.1.139 at 2015-10-23 13:16:17 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://selt-workspace-jzlantz.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 129.255.1.139 at 2015-10-23 13:16:17 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 13:16:37 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I0pkEa0nT+nmD2xGP8qiPw2Y/5JPrppoZHpfV68K/7Jowf/62qxTehSG8542BxF/GpasVAGHej0FhmxCIIqejw==", "search_terms"=>"hi", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (157.6ms)
+Completed 200 OK in 256ms (Views: 178.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 13:16:57 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I0pkEa0nT+nmD2xGP8qiPw2Y/5JPrppoZHpfV68K/7Jowf/62qxTehSG8542BxF/GpasVAGHej0FhmxCIIqejw==", "search_terms"=>"hi", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (175.0ms)
+Completed 200 OK in 416ms (Views: 210.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 13:30:07 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I0pkEa0nT+nmD2xGP8qiPw2Y/5JPrppoZHpfV68K/7Jowf/62qxTehSG8542BxF/GpasVAGHej0FhmxCIIqejw==", "search_terms"=>"up", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (78.9ms)
+Completed 200 OK in 230ms (Views: 117.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 13:30:26 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I0pkEa0nT+nmD2xGP8qiPw2Y/5JPrppoZHpfV68K/7Jowf/62qxTehSG8542BxF/GpasVAGHej0FhmxCIIqejw==", "search_terms"=>"Finding Nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (69.3ms)
+Completed 200 OK in 185ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 129.255.1.139 at 2015-10-23 13:33:45 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (20.3ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:33:45 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:33:45 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:33:45 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:33:45 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:33:45 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:33:45 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 129.255.1.139 at 2015-10-23 13:33:47 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:33:47 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:33:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:33:48 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:33:48 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:33:48 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:33:49 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date" for 129.255.1.139 at 2015-10-23 13:33:49 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"release_date"}
+Redirected to https://selt-workspace-jzlantz.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date" for 129.255.1.139 at 2015-10-23 13:33:49 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"release_date"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date" for 129.255.1.139 at 2015-10-23 13:33:50 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"release_date"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/1" for 129.255.1.139 at 2015-10-23 13:33:54 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (189.3ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 590ms (Views: 50.4ms | ActiveRecord: 189.3ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:35:03 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+Redirected to https://selt-workspace-jzlantz.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:35:03 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:35:04 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:37:12 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:37:13 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:37:13 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:37:13 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:37:13 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:37:13 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:37:13 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:38:53 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:38:54 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:38:54 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:38:54 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:38:54 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:38:54 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:38:54 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:38:55 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:38:55 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:38:55 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:38:55 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:38:55 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:38:55 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:38:55 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:40:36 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:40:36 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:40:36 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:36 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:36 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:36 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:36 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:40:38 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:40:38 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:40:38 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:38 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:38 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:38 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:38 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:40:39 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:39 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:40:39 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:40:39 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:39 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:39 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:40:39 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:41:56 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:41:56 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:41:56 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:41:56 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:41:56 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:41:56 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:41:56 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:46:17 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:17 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:17 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:46:17 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:17 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:46:17 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:17 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:46:19 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:46:19 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:19 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:19 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:19 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:19 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:46:19 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:46:20 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:46:20 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:20 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:46:20 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:20 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:20 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:46:20 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:47:19 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (24.6ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:47:19 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:47:19 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:47:19 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:47:19 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:47:19 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:47:19 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 13:47:30 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GQxTrYt6aaNnNQHwTxOQGh/JhSCRp2rZG60jc7ItMNJSh8hG/PF1MJW8nihG3iNaCMfW5t+Oiox6URBmPa1R7w==", "search_terms"=>"Finding Nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (76.5ms)
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `id' for :movie:Symbol):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Add to Rotten Potatoes
+    22:       %td=check_box_tag "matching_movies[#{movie[:movie.id]}]"
+    23:       
+    24:   
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69983975756180'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69983975756180'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.2ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 13:50:18 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GQxTrYt6aaNnNQHwTxOQGh/JhSCRp2rZG60jc7ItMNJSh8hG/PF1MJW8nihG3iNaCMfW5t+Oiox6URBmPa1R7w==", "search_terms"=>"Finding Nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (74.8ms)
+Completed 200 OK in 184ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 13:56:39 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (1.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (22.9ms)
+Completed 200 OK in 91ms (Views: 77.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 13:56:39 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 13:56:39 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 13:56:39 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 13:56:39 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 13:56:39 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 13:56:39 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 14:44:24 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:44:24 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:44:24 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:44:24 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:44:24 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:44:24 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:44:24 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:44:26 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W36Ac3sMv4aGlXnEC+dxX0+FzHwT/2goMDzbh9/1WMAQ9RuYDIejFXQc5hwCKsIfWIuful3WiH1RwOiSUHU5/Q==", "search_terms"=>"Up", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:28: syntax error, unexpected ')'
+));}\n", 0, false);::Haml::Uti...
+ ^
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:28: unterminated string meets end of file
+/home/ubuntu/workspace/hw6fall15/app/views/movies/search_tmdb.html.haml:28: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/movies/search_tmdb.html.haml:28: syntax error, unexpected ')'
+  app/views/movies/search_tmdb.html.haml:28: unterminated string meets end of file
+  app/views/movies/search_tmdb.html.haml:28: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.3ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:45:13 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W36Ac3sMv4aGlXnEC+dxX0+FzHwT/2goMDzbh9/1WMAQ9RuYDIejFXQc5hwCKsIfWIuful3WiH1RwOiSUHU5/Q==", "search_terms"=>"Up", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    24:       %strong Add to Rotten Potatoes
+    25:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+    26:       
+    27: #= form_tag movies_path, :method => :get, :id => 'add_movies_form' do
+    28:       
+    29:   
+  app/views/movies/search_tmdb.html.haml:27
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.6ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:47:16 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W36Ac3sMv4aGlXnEC+dxX0+FzHwT/2goMDzbh9/1WMAQ9RuYDIejFXQc5hwCKsIfWIuful3WiH1RwOiSUHU5/Q==", "search_terms"=>"Up", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (74.9ms)
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Release Info
+    22:       =movie.releases(movie.id)
+    23:     %li
+    24:       %strong Add to Rotten Potatoes
+    25:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984095773300'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984095773300'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.5ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:47:39 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W36Ac3sMv4aGlXnEC+dxX0+FzHwT/2goMDzbh9/1WMAQ9RuYDIejFXQc5hwCKsIfWIuful3WiH1RwOiSUHU5/Q==", "search_terms"=>"Up", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (81.6ms)
+Completed 200 OK in 179ms (Views: 104.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:48:17 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W36Ac3sMv4aGlXnEC+dxX0+FzHwT/2goMDzbh9/1WMAQ9RuYDIejFXQc5hwCKsIfWIuful3WiH1RwOiSUHU5/Q==", "search_terms"=>"Up", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (81.7ms)
+Completed 200 OK in 200ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:48:18 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:48:18 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:48:18 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:48:18 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:48:18 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:48:18 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 14:49:34 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:49:34 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:49:34 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:49:34 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:49:34 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:49:34 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:49:34 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:49:35 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ncN0SqSixxjswCf77xuYgXMkzmEtlwkavDvsMgr2JVTWSO+h0ynbix5JuCPm1ivBZCqdp2O+6U/dx98nhXZEaQ==", "search_terms"=>"", "commit"=>"Search TMDb"}
+Redirected to https://selt-workspace-jzlantz.c9.io/movies
+Completed 302 Found in 76ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 129.255.1.139 at 2015-10-23 14:49:35 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://selt-workspace-jzlantz.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 129.255.1.139 at 2015-10-23 14:49:35 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:49:42 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (216.3ms)
+Completed 200 OK in 333ms (Views: 240.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:50:13 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (336.1ms)
+Completed 200 OK in 438ms (Views: 363.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:50:13 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:50:13 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:50:13 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:50:13 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:50:13 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:50:13 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:50:24 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (256.0ms)
+Completed 200 OK in 348ms (Views: 279.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:50:25 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:50:25 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:50:25 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:50:25 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:50:25 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:50:25 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:51:04 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (215.8ms)
+Completed 200 OK in 316ms (Views: 242.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:51:04 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:04 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:51:04 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:04 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:04 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:04 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:51:21 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (218.5ms)
+Completed 200 OK in 318ms (Views: 244.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:21 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:21 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:21 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:51:21 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:21 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:51:21 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:51:36 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (145.1ms)
+Completed 500 Internal Server Error in 227ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `certification' for #<Hash:0x00000005b7e530>):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Release Info
+    22:       =Tmdb::Movie.releases(movie.id).certification()
+    23:     %li
+    24:       %strong Add to Rotten Potatoes
+    25:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_48310120'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_48310120'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.4ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:51:48 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (225.3ms)
+Completed 200 OK in 328ms (Views: 253.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:51:48 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:48 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:51:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:48 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:48 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:51:48 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:52:51 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (157.5ms)
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Release Info
+    22:       =Tmdb::Movie.releases(movie.id)[0][0]
+    23:     %li
+    24:       %strong Add to Rotten Potatoes
+    25:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984079657340'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984079657340'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.9ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:53:11 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (220.8ms)
+Completed 200 OK in 326ms (Views: 248.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:53:27 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (165.0ms)
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `third' for #<Hash:0x007f4ce0b37b10>):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Release Info
+    22:       =Tmdb::Movie.releases(movie.id).third
+    23:     %li
+    24:       %strong Add to Rotten Potatoes
+    25:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69984083120320'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69984083120320'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.5ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:53:43 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (145.4ms)
+Completed 500 Internal Server Error in 299ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (no implicit conversion of Fixnum into Array):
+    19:       = truncate(movie.overview, :length => 250)
+    20:     %li
+    21:       %strong Release Info
+    22:       =Tmdb::Movie.releases(movie.id).first+2
+    23:     %li
+    24:       %strong Add to Rotten Potatoes
+    25:       %td=check_box_tag 'checked_movie_ids[]',movie.id
+  app/views/movies/search_tmdb.html.haml:22:in `+'
+  app/views/movies/search_tmdb.html.haml:22:in `block in _app_views_movies_search_tmdb_html_haml__2431607603500732703_69983977102200'
+  app/views/movies/search_tmdb.html.haml:3:in `each'
+  app/views/movies/search_tmdb.html.haml:3:in `_app_views_movies_search_tmdb_html_haml__2431607603500732703_69983977102200'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (57.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.6ms)
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:53:55 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (233.7ms)
+Completed 200 OK in 344ms (Views: 268.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:53:55 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:53:55 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:53:55 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:53:55 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:53:55 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:54:51 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (222.0ms)
+Completed 200 OK in 329ms (Views: 253.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:54:51 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:54:51 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:54:51 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:54:51 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:54:51 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:55:07 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (235.8ms)
+Completed 200 OK in 338ms (Views: 265.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:55:08 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:08 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:55:08 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:08 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:08 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:08 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:55:17 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (223.3ms)
+Completed 200 OK in 324ms (Views: 250.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:55:17 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:55:17 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:17 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:17 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:17 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:17 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:55:32 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (360.4ms)
+Completed 200 OK in 454ms (Views: 383.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:33 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:55:33 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:33 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:33 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:55:33 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:33 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:55:55 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (224.7ms)
+Completed 200 OK in 326ms (Views: 253.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:55:55 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:55 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:55:56 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:56 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:56 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:55:56 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:56:11 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (631.0ms)
+Completed 200 OK in 728ms (Views: 653.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:56:12 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:56:12 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:12 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:12 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:12 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:12 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:56:29 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (216.0ms)
+Completed 200 OK in 313ms (Views: 239.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:56:30 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:30 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:30 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:56:30 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:30 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:30 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:56:43 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (302.1ms)
+Completed 200 OK in 467ms (Views: 389.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:56:44 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:56:44 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:44 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:44 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:44 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:56:44 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:58:14 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (223.6ms)
+Completed 200 OK in 338ms (Views: 258.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:58:14 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:58:14 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:58:14 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:58:14 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:58:14 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:58:14 +0000
+
+
+Started POST "/movies/search_tmdb" for 129.255.1.139 at 2015-10-23 14:58:38 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICR+suzUP0Fby4gdrwA3wFiYFBrIi8OJuqcwC228Fihrr+VZm18j0qlCF8WmzYSAT5ZH3IaiI9zbWwMe4jx3FQ==", "search_terms"=>"Finding nemo", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (221.2ms)
+Completed 200 OK in 327ms (Views: 252.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.1.139 at 2015-10-23 14:58:38 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.1.139 at 2015-10-23 14:58:38 +0000
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.1.139 at 2015-10-23 14:58:38 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.1.139 at 2015-10-23 14:58:38 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.1.139 at 2015-10-23 14:58:38 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.1.139 at 2015-10-23 14:58:38 +0000

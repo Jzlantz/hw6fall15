@@ -6,7 +6,12 @@ class Movie < ActiveRecord::Base
   def self.find_in_tmdb(search_terms)
     Tmdb::Api.key("f4702b08c0ac6ea5b51425788bb26562")
     begin
-      Tmdb::Movie.find(search_terms)
+     movies_search = Tmdb::Movie.find(search_terms)
+   # if(movies_search.empty? or movies_search.nil?)
+     #  return Array([])
+  #  else
+      # return movies_search
+   # end 
     rescue ArgumentError => tmdb_error
       
     rescue RuntimeError => tmdb_error

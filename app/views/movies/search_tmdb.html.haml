@@ -1,8 +1,5 @@
 %h1 Search Results:
 
-- if @matching_movies.empty?
-  %p No results were found
-
 - @matching_movies.each do |movie|
 
   %h2= movie.title
@@ -20,5 +17,14 @@
     %li
       %strong Description:
       = truncate(movie.overview, :length => 250)
+    %li
+      %strong Content Rating
+      =(Tmdb::Movie.releases(movie.id).flatten)[3][0]["certification"]
+    %li
+      %strong Add to Rotten Potatoes
+      %td=check_box_tag 'checked_movie_ids[]',movie.id
+      
+= form_tag movies_path, :method => :get, :id => 'add_movies_form' do
+  = submit_tag 'Add Selected Movies'
       
   
