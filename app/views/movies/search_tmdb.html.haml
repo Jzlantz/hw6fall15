@@ -14,17 +14,8 @@
         %strong Release Date:
         = movie.release_date
       %li
-        %strong Poster URL
-        = (@configuration.base_url).to_s + (@configuration.poster_sizes[0]).to_s +  (movie.poster_path).to_s
-      %li
-        %strong Description:
-        = truncate(movie.overview, :length => 250)
-      %li
         %strong Content Rating
         =get_rating(movie.id)
-      %li
-        %strong Movie Details
-        =Tmdb::Movie.detail(movie.id)
       %li
         %strong Title
         =Tmdb::Movie.detail(movie.id)["original_title"]
@@ -34,9 +25,6 @@
       %li
         %strong Description
         =Tmdb::Movie.detail(movie.id)["overview"]
-      %li
-        %strong Release Date
-        =Tmdb::Movie.detail(movie.id)["release_date"]
       %li
         %strong Add to Rotten Potatoes
         %td=check_box_tag 'checked_movie_ids[]',movie.id

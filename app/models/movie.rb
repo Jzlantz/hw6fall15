@@ -1,5 +1,7 @@
 class Movie < ActiveRecord::Base
-  include MoviesHelper
+  
+  class Movie::InvalidAPIKeyError < StandardError ; end
+    
   def self.all_ratings
     %w(G PG PG-13 NC-17 R)
   end
@@ -8,17 +10,12 @@ class Movie < ActiveRecord::Base
     Tmdb::Api.key("f4702b08c0ac6ea5b51425788bb26562")
     begin
      movies_search = Tmdb::Movie.find(search_terms)
-   # if(movies_search.empty? or movies_search.nil?)
-     #  return Array([])
-  #  else
-      # return movies_search
-   # end 
-    rescue ArgumentError => tmdb_error
-      
-    rescue RuntimeError => tmdb_error
-      
+    rescue ArgumentError => e
+      raise Movie::InvalidAPIKeyError, e.message
+    rescue RuntimeError => e
+      raise Movie::InvalidAPIKeyError, e.message
     rescue NoMethodError => e
-
+      #parameters are nil
     end
   end
   

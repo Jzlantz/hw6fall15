@@ -9904,3 +9904,86 @@ Processing by MoviesController#show as HTML
   [1m[35mMovie Load (0.3ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 22]]
   Rendered movies/show.html.haml within layouts/application (4.5ms)
 Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 173.29.130.102 at 2015-10-24 00:23:15 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (184.0ms)
+Completed 200 OK in 387ms (Views: 263.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 173.29.130.102 at 2015-10-24 00:23:16 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 173.29.130.102 at 2015-10-24 00:23:16 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.29.130.102 at 2015-10-24 00:23:16 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.29.130.102 at 2015-10-24 00:23:16 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.29.130.102 at 2015-10-24 00:23:16 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.29.130.102 at 2015-10-24 00:23:16 +0000
+
+
+Started POST "/movies/search_tmdb" for 173.29.130.102 at 2015-10-24 00:23:29 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BCx3i8FaVP1suuvEqeU6pllfrjgrFT9gu/Z04UEIqJWq/OCa7QQX3YZyIlq0MrHKy7FZAmXgXFbhnzobAWI8Eg==", "search_terms"=>"What about bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (827.0ms)
+Completed 200 OK in 1033ms (Views: 849.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/search_tmdb" for 173.29.130.102 at 2015-10-24 00:24:35 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BCx3i8FaVP1suuvEqeU6pllfrjgrFT9gu/Z04UEIqJWq/OCa7QQX3YZyIlq0MrHKy7FZAmXgXFbhnzobAWI8Eg==", "search_terms"=>"What about bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (885.1ms)
+Completed 200 OK in 981ms (Views: 908.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 173.29.130.102 at 2015-10-24 00:24:36 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 173.29.130.102 at 2015-10-24 00:24:36 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.29.130.102 at 2015-10-24 00:24:36 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.29.130.102 at 2015-10-24 00:24:36 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.29.130.102 at 2015-10-24 00:24:36 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.29.130.102 at 2015-10-24 00:24:36 +0000
+
+
+Started POST "/movies/search_tmdb" for 173.29.130.102 at 2015-10-24 00:24:56 +0000
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BCx3i8FaVP1suuvEqeU6pllfrjgrFT9gu/Z04UEIqJWq/OCa7QQX3YZyIlq0MrHKy7FZAmXgXFbhnzobAWI8Eg==", "search_terms"=>"What about bob", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (714.7ms)
+Completed 200 OK in 845ms (Views: 737.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 173.29.130.102 at 2015-10-24 00:24:57 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.29.130.102 at 2015-10-24 00:24:57 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 173.29.130.102 at 2015-10-24 00:24:57 +0000
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.29.130.102 at 2015-10-24 00:24:57 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.29.130.102 at 2015-10-24 00:24:57 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.29.130.102 at 2015-10-24 00:24:57 +0000
