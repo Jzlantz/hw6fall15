@@ -10,7 +10,6 @@ class MoviesController < ApplicationController
   end
   
   def add_tmdb
-    #raise params.to_s
     if(params['checked_movie_ids'].nil?)
       flash[:notice] = "No movies selected"
       redirect_to movies_path
