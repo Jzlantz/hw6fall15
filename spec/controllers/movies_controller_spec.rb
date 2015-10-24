@@ -35,6 +35,12 @@ RSpec.describe MoviesController, type: :controller do
      it 'should call the model method that performs create_from_tmdb' do
         Movie.should_receive(:create_from_tmdb).with('72105')
         get :add_tmdb, {"utf8"=>"✓", "checked_movie_ids"=>["72105"], "commit"=>"Add Selected Movies", "controller"=>"movies", "action"=>"add_tmdb"}
+        expect(flash[:notice]).to be_present
+     end
+     it 'should respond with a flash message when added' do
+        #Movie.should_receive(:create_from_tmdb).with()
+        get :add_tmdb, {"utf8"=>"✓", "checked_movie_ids"=> nil,"commit"=>"Add Selected Movies", "controller"=>"movies", "action"=>"add_tmdb"}
+        expect(flash[:notice]).to be_present
      end
     end
   end
